@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- banner-container -->
-    <div class="banner flex justify-between max-w-[1200px] mx-auto my-10">
+    <div class="banner flex flex-col md:flex-row justify-between max-w-[1200px] mx-auto my-10">
       <!-- banner left -->
       <div class="banner-left">
         <h1 class="text-[70px] font-semibold leading-22">
@@ -28,25 +28,42 @@
           Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your
           Taste Buds.
         </p>
-        <button class="w-[180px] h-[50px] bg-orange-800 text-white rounded-lg">
+        <button
+          class="w-[180px] h-[50px] bg-orange-800 text-white rounded-lg bg-gradient-to-r from-[#ff8938] to-[#ff0000]"
+        >
           Explore More
+          <span"
+            ><i class="-rotate-45 fa-solid fa-arrow-right-long"></i
+          ></span>
         </button>
       </div>
-      <div class="banner-right">
-        <img src="./images/banner.png" alt="" />
+      <div class="relative banner-right">
+        <img src="./images/banner.png" class="" />
         <!-- ratings -->
         <div
-          class="ratings flex justify-around w-[200px] h-[50px] drop-shadow-2xl "
+          class="ratings flex items-center justify-around w-[200px] h-[80px] bg-white shadow-md absolute left-[120px] top-[400px] rounded-xl"
         >
           <div class="rating-left">
-            <span><i class="fa-solid fa-star"></i></span>
+            <span class="text-[20px]"><i class="fa-solid fa-star"></i></span>
           </div>
           <div class="rating-right">
-            <div>5.00</div>
+            <div class="font-bold text-[20px]">5.00</div>
             <div>Trust Pilot Ratings</div>
           </div>
         </div>
       </div>
     </div>
+    <!-- our feature -->
+     <section class="our-features max-w-[1200px] mx-auto my-10">
+      <h1 class="w-[1000px] mx-auto my-4 text-4xl font-semibold text-center">Our Featured Products</h1>
+      <p class="text-neutral-500 w-[1000px] text-center mx-auto ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour or randomised words which don't look even slightly believable. </p>
+      <div class="my-10 feature-cards"> 
+        <div class="card w-[260px] h-[390px] border-2 bg-gradient-to-t from-[#efdddd] to-[#f4f4f4] ">
+          <img src="./images/tea-1.png" class="mx-auto w-[130px] hp[212px] my-5">
+          <h1 class="text-2xl font-bold text-zinc-900">Milk Tea</h1>
+          <p class="text-neutral-500">Creamer could be Replaced by fresh Milk</p>
+        </div>
+      </div>
+     </section>
   </body>
 </html>
